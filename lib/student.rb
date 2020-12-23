@@ -19,12 +19,12 @@ attr_reader :id
   end
 
   def self.drop_table
-    sql = <<-SQL 
+    sql = <<-SQL
     drop_table :students
     SQL
     DB[:conn].execute(sql)
   end
-  
+
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
 
